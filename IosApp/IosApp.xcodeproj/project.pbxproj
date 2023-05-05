@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2049459E29E6620600E2B4CD /* IMG_5432.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 2049459D29E6620600E2B4CD /* IMG_5432.JPG */; };
 		2091B31729B5B59F007A5D26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2091B31629B5B59F007A5D26 /* AppDelegate.swift */; };
 		2091B31929B5B59F007A5D26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2091B31829B5B59F007A5D26 /* SceneDelegate.swift */; };
 		2091B31B29B5B59F007A5D26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2091B31A29B5B59F007A5D26 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2049459D29E6620600E2B4CD /* IMG_5432.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_5432.JPG; path = ../../../../Downloads/IMG_5432.JPG; sourceTree = "<group>"; };
 		2091B31329B5B59F007A5D26 /* IosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2091B31629B5B59F007A5D26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2091B31829B5B59F007A5D26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				2091B31F29B5B5A0007A5D26 /* Assets.xcassets */,
 				2091B32129B5B5A0007A5D26 /* LaunchScreen.storyboard */,
 				2091B32429B5B5A0007A5D26 /* Info.plist */,
+				2049459D29E6620600E2B4CD /* IMG_5432.JPG */,
 			);
 			path = IosApp;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2091B32329B5B5A0007A5D26 /* LaunchScreen.storyboard in Resources */,
+				2049459E29E6620600E2B4CD /* IMG_5432.JPG in Resources */,
 				2091B32029B5B5A0007A5D26 /* Assets.xcassets in Resources */,
 				2091B31E29B5B59F007A5D26 /* Main.storyboard in Resources */,
 			);
