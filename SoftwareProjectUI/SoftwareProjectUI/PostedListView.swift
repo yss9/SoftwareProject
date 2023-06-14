@@ -1,10 +1,3 @@
-//
-//  PostedListView.swift
-//  SoftwareProjectUI
-//
-//  Created by 서영석 on 2023/05/09.
-//
-
 import SwiftUI
 
 struct PostedListView: View {
@@ -17,23 +10,19 @@ struct PostedListView: View {
             VStack{
                 NavigationLink(destination: Movie()){
                     Text("Movie")
-                    
                 }
                 .buttonStyle(DefaultButtonStyle())
                 .foregroundColor(Color.blue)
                 .padding()
                     
-                
                 NavigationLink(destination: Book()){
                     Text("Book")
-                    
                 }.buttonStyle(DefaultButtonStyle())
                     .foregroundColor(Color.blue)
                     .padding()
                 
                 NavigationLink(destination: ArtMuseum()){
                     Text("ArtMuseum")
-                    
                 }.buttonStyle(DefaultButtonStyle())
                     .foregroundColor(Color.blue)
                     .padding()

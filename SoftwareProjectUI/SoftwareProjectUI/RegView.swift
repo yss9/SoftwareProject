@@ -1,10 +1,3 @@
-//
-//  RegView.swift
-//  SoftwareProjectUI
-//
-//  Created by 서영석 on 2023/05/09.
-//
-
 import SwiftUI
 import Foundation
 
@@ -15,7 +8,7 @@ struct RegView: View {
     @State private var idAlert : Bool = false
     @State private var pwAlert : Bool = false
     @State private var notAlert : Bool = false
-    
+    @State private var getUser : Bool = false
     var body: some View {
         ZStack{
             Text("아이디")
@@ -36,6 +29,7 @@ struct RegView: View {
             }message: {
                 Text("아이디가 확인 되었습니다.")
             }
+            
             Text("비밀번호")
                 .offset(x:-155,y:10)
                 .font(.system(size: 20, weight: .light))
@@ -74,18 +68,17 @@ struct RegView: View {
                 Text("비밀번호를 다시 확인해주세요.")
             }
             
-            
            
         }
         .padding()
         
         
     }
-    func saveData(){
-        UserDefaults.standard.set(self.newid, forKey: self.newpw)
-    }
+   
     
 }
+
+
 class CofirmUser:UserDefaults{
     
 }

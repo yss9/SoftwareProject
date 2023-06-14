@@ -1,10 +1,3 @@
-//
-//  CreatePostView.swift
-//  SoftwareProjectUI
-//
-//  Created by 서영석 on 2023/05/09.
-//
-
 import SwiftUI
 
 struct CreatePostView: View {
@@ -16,9 +9,8 @@ struct CreatePostView: View {
                 .foregroundColor(Color.black)
                 .offset(x:0,y:-240)
             VStack{
-               NavigationLink(destination: Movie()){
+               NavigationLink(destination: CreateUIView()){
                     Text("Movie")
-                    
                     
                 }.buttonStyle(DefaultButtonStyle())
                     .foregroundColor(Color.blue)
@@ -46,10 +38,9 @@ struct CreatePostView: View {
 }
 
 struct Movie: View {
-    
     var body: some View {
         ZStack{
-            Text("ㅎㅎ")
+            Text("Movie")
         }
       }
 }
@@ -57,13 +48,13 @@ struct Movie: View {
 
 struct Book: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Book")
     }
 }
 
 struct ArtMuseum: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("ArtMuseum")
     }
 }
 

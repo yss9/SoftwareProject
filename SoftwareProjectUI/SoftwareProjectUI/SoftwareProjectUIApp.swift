@@ -1,10 +1,3 @@
-//
-//  SoftwareProjectUIApp.swift
-//  SoftwareProjectUI
-//
-//  Created by 서영석 on 2023/05/07.
-//
-
 import SwiftUI
 import FirebaseCore
 

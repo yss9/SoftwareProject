@@ -1,18 +1,13 @@
-//
-//  CreateUIView.swift
-//  SoftwareProjectUI
-//
-//  Created by 서영석 on 2023/05/14.
-//
-
 import SwiftUI
 
 struct CreateUIView: View {
     @State var title = ""
     @State var director = ""
     @State var actor = ""
-    var scores = [0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0,1.0,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,2.0,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9,3.0,3.1,3.2,3.3,3.4,3.5,3.6,3.7,3.8,3.9,4.0,4.1,4.2,4.3,4.4,4.5,4.6,4.7,4.8,4.9,5.0,]
-    @State var score : Float = 0.0
+    @State var score = ""
+    @State var reviews = ""
+    
+    
     var body: some View {
         
         ZStack{
@@ -23,7 +18,7 @@ struct CreateUIView: View {
             Text("제목")
                 .offset(x:-170,y:-305)
                 .font(.system(size: 20, weight: .light))
-            TextField("",text: $title)
+            TextField("입력하세요",text: $title)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .frame(width: 330,height: 10)
                 .offset(x:20,y:-305)
@@ -31,7 +26,7 @@ struct CreateUIView: View {
             Text("감독")
                 .offset(x:-170,y:-265)
                 .font(.system(size: 20, weight: .light))
-            TextField("",text: $director)
+            TextField("입력하세요",text: $director)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .frame(width: 330,height: 10)
                 .offset(x:20,y:-265)
@@ -39,7 +34,7 @@ struct CreateUIView: View {
             Text("배우")
                 .offset(x:-170,y:-225)
                 .font(.system(size: 20, weight: .light))
-            TextField("",text: $actor)
+            TextField("입력하세요",text: $actor)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .frame(width: 330,height: 10)
                 .offset(x:20,y:-225)
@@ -47,9 +42,22 @@ struct CreateUIView: View {
             Text("별점")
                 .offset(x:-170,y:-180)
                 .font(.system(size: 20, weight: .light))
+            TextField("입력하세요",text: $score)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .frame(width: 330,height: 10)
+                .offset(x:20,y:-180)
+            
+            TextEditor(text: $reviews)
+                  .cornerRadius(30)
+                  .padding()
+                  .background(.gray)
+                  .textFieldStyle(RoundedBorderTextFieldStyle())
+                  .frame(width: 400,height: 280)
+                  .offset(x:0,y:270)
             
         }.padding()
     }
+    
 }
 
 
@@ -60,12 +68,20 @@ struct CreateUIView_Previews: PreviewProvider {
     }
 }
 
-struct CreateMovie:Identifiable{
-    let id: UUID
-    var title : String
-    var director : String
-    var actor : String
-    var score : Float
+struct CreateMovie{
+    var title : String = ""
+    var director : String = ""
+    var actor : String = ""
+    var score : String = ""
+    var reviews : String = ""
+    
+    init(title: String, director: String, actor: String, score: String, reviews: String) {
+        self.title = title
+        self.director = director
+        self.actor = actor
+        self.score = score
+        self.reviews = reviews
+    }
     
 }
 
